@@ -58,3 +58,11 @@ function torrar (pao, nome, pagamento){
 	
 } 
 
+console.log(" --------------------------------- ");
+
+createStringConnection("db_products")
+
+
+function createDatabase(databeseNome){
+	console.log("connect: DBCONNECT;  user=jose;pass=123;initial_d" + databeseNome);
+}
