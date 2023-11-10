@@ -35,3 +35,6 @@ function calcularRank(vitorias, derrotas) {
 }
 
 console.log("O jogador " + NomeJogador, "tem o saldo de " + resultadoRankeadas.saldoRankeadas, "está no nível " + resultadoRankeadas.resultado);
+
+
+
