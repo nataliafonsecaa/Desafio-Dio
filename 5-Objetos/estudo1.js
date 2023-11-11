@@ -28,7 +28,7 @@ console.log("===COM JSON===");
 let invoice = {
 	nome: "catarina",
 	age: 25,
-	produtos: {
+	products: {
 		0: ["fone" ,  150.00],
 		1: ["Celular" , 1599.99],
 		2: ["Tablet" , 1250.90]
@@ -38,8 +38,12 @@ let invoice = {
 generateInvoice(invoice)
 
 function generateInvoice(invoice){
-	console.log(' comprador ${invoice.nome}');
-	console.log('idade  é: ${invoice.age} ');
+	console.log(` comprador ${invoice.nome}`);
+	console.log(`idade  é: ${invoice.age} `);
+
+	for (let index in invoice.products ){
+	let [productsName, productsPrice] = invoice.products[index]
 	console.log("- - - - - - - - -");
-    console.log('produto &{invoice.produto}');
+    console.log(` - ${productsName}: R$ ${productsPrice} `);
+}
 }
